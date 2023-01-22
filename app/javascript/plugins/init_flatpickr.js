@@ -1,7 +1,8 @@
 import flatpickr from "flatpickr";
 
-const initFlatpickr = () => {
-  flatpickr(".datepicker", {});
-};
-
-export { initFlatpickr };
+const loadFlatpickr = () => {
+  //console.log("Hello brice");
+  const list = document.querySelector(".results")
+  flatpickr(list, {});
+}
+export { loadFlatpickr };
