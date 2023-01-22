@@ -1,0 +1,17 @@
+<div class="reza-box">
+    <div>
+        <p><strong><%= @room.price_per_night %></strong> €</p>
+    </div>
+          <%= simple_form_for(@booking) do |f| %>
+            <div class="reza-start">
+                <%= f.input :starts_at, class: "dated" %>
+              </div>
+            <hr>
+            <div class="reza-end"></div>
+        <% end %>
+
+    </div>
+    <div class="reza-capacity"></div>
+
+</div>
+

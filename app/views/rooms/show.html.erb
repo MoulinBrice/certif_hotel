@@ -1,0 +1,33 @@
+<div class="room_details">
+    <h1>Détails de la chambre <%= @room.id %></h1>
+    <div class="card-trip">
+        <img src="<%= @room.photo %>"/>
+        <div class="card-trip-infos">
+            <div>
+            <h2>Chambre <%= @room.id %></h2>
+            <p>la capacité de cette chambre est de <%= @room.capacity %> occupant(s)</p>
+            </div>
+            <h2 class="card-trip-pricing"><%= @room.price_per_night %> €</h2>
+        </div>
+    </div>
+    <hr>
+
+    <div class="room-info">
+        <div class="room-details">
+            <p>
+                Lorem ipsum dolor sit amet. Ut iusto quisquam eos recusandae beatae qui fuga alias ea nihil deserunt id dolorem quisquam eum sunt voluptatem non alias omnis. Ab odit provident ea dolorem earum et consequatur quia eum voluptatem iusto non fugit unde nam velit autem. Ut atque ipsam 33 eligendi adipisci cum earum dolore qui consequatur alias aut voluptas suscipit cum totam aliquid hic excepturi sint. Sed molestiae natus in maxime consequuntur et itaque dicta ea dicta repellendus aut optio dolores non voluptas voluptas.
+            </p>
+            <p>
+                Non rerum quod est reprehenderit animi et quaerat recusandae aut aspernatur molestias ea internos modi in dolorem molestias ea internos delectus. Aut rerum explicabo eum veniam repellat vel ipsa placeat aut accusantium facilis qui placeat deleniti.
+            </p>
+        </div>
+
+        <div class="room-reza">
+            <%= render "shared/reza" %>
+        </div>
+    </div>
+
+
+</div>
+
+

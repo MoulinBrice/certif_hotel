@@ -1,0 +1,18 @@
+<div class="card_container">
+    <% @rooms.each do |room| %>
+        <div class="card-elements">
+            <a href= "<%= room_path(room.id) %>" >
+                <div class="card-img">
+                    <%= image_tag(room.photo, size: "300x300", alt: "Edit Entry", class: "menu_icon") %>
+                </div>
+                <div class="card-infos">
+                    <h2>Chambre N° <%= room.id %></h2>
+                    <p><strong><%= room.price_per_night %> €</strong> par nuits <br>
+                    Capacité de la chambre : <%= room.capacity %>
+                    </p>
+                </div>
+            </a>
+        </div>
+    <% end %>
+</div>
+
